@@ -17,8 +17,7 @@
  .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100vh;
+  height: auto;
   background: #f5f5f5;
 
 }
@@ -30,6 +29,7 @@
   display: inline-block;
   aspect-ratio: auto;
   padding: 100px 50px;
+  margin: 20px;
 }
 
 .banner h1 {
