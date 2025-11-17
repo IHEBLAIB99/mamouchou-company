@@ -1,14 +1,25 @@
 
 <div class="contact-form-card">
 	<h1>Contact Us</h1>
-	<form class="contact-form" action="#" method="post">
-		<div class="form-row">
-			<input type="text" name="first_name" placeholder="First Name" required>
-			<input type="text" name="last_name" placeholder="Last Name" required>
-		</div>
-		<input type="email" name="email" placeholder="Email" required>
-		<input type="tel" name="phone" placeholder="Phone Number" required>
-		<textarea name="message" placeholder="Your message" rows="4" required></textarea>
-		<button type="submit">Send</button>
+	<p style="text-align:center; color:#555; margin-bottom:20px;">Have a question or need a quote? Fill the form below and we'll get back to you within 1 business day.</p>
+
+	<form class="contact-form" action="#" method="post" aria-labelledby="contact-heading">
+		<!-- Rails CSRF token (keeps form ready for Rails handlers) -->
+		<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+		<label for="name" style="font-weight:600;">Full name</label>
+		<input id="name" type="text" name="name" placeholder="e.g. John Doe" required aria-required="true">
+
+		<label for="email" style="font-weight:600;">Email</label>
+		<input id="email" type="email" name="email" placeholder="you@example.com" required aria-required="true">
+
+		<label for="phone" style="font-weight:600;">Phone (optional)</label>
+		<input id="phone" type="tel" name="phone" placeholder="+216 12 345 678" pattern="[0-9+\s()-]{7,}" aria-describedby="phone-help">
+		<small id="phone-help" style="color:#666;">Include country code for faster contact.</small>
+
+		<label for="message" style="font-weight:600;">Message</label>
+		<textarea id="message" name="message" rows="5" placeholder="Tell us what you're looking for (quantity, product types, destination)" required aria-required="true"></textarea>
+
+		<button type="submit">Send message</button>
 	</form>
 </div>
