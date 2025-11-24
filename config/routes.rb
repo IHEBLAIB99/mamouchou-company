@@ -12,5 +12,13 @@ Rails.application.routes.draw do
   get "contact", to: "pages#contact"
   # also accept /pages/contact to avoid routing errors from older links/tools
   get "pages/contact", to: "pages#contact"
+  get "products", to: "pages#products"
+
+  namespace :api do
+    namespace :v1 do
+      # GET /api/v1/production_images
+      get "production_images", to: "images#index"
+    end
+  end
   # root "posts#index"
 end

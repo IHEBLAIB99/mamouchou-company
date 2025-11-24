@@ -1,16 +1,20 @@
-<nav style="width: 100%; background: #eb2b2bff; color: #fff; padding: 0; margin-bottom: 0; border-radius: 0 0 10px 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);">
-	<div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 10px 30px;">
-		<span style="font-size: 1.5em; font-weight: bold; letter-spacing: 2px;">MAMOCHOU-COMPANY</span>
-		<ul style="list-style: none; display: flex; gap: 30px; margin: 0; padding: 0;">
-			<li><a href="#" style="color: #fff; text-decoration: none; font-weight: 500;">Home</a></li>
-			<li><a href="#about" style="color: #fff; text-decoration: none; font-weight: 500;">About</a></li>
-			<li><a href="#products" style="color: #fff; text-decoration: none; font-weight: 500;">Products</a></li>
-			<li><a href="#contact" style="color: #fff; text-decoration: none; font-weight: 500;">Contact</a></li>
-		</ul>
+<nav class="navbar">
+	<div class="navbar-content">
+		<div class="navbar-left">
+			<span class="navbar-brand">MAMOCHOU-COMPANY</span>
+		</div>
+		<div class="navbar-right">
+			<ul>
+				<li><%= link_to 'Home', root_path %></li>
+				<li><a href="#about">About</a></li>
+				<li><%= link_to 'Products', products_path %></li>
+				<li><%= link_to 'Contact', contact_path %></li>
+			</ul>
+		</div>
 	</div>
 </nav>
 <div class="container">
-	<div class="banner" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80');">
+	<div class="banner" style="background-image: url('https://images.unsplash.com/photo-1511732353404-7dffb0c9b2d6?auto=format&fit=crop&w=1400&q=80');">
 		<h1>MAMOCHOU-COMPANY</h1>
 		<h2>Premium Dried Fruits & Nuts Exporter</h2>
 		<p>
@@ -21,34 +25,49 @@
 		</div>
 	</div>
 
-	<div id="about" style="padding: 40px 20px; background: #be2828ff; border-radius: 15px; margin: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-		<h2 style="color: #510c0c;">About Us</h2>
-		<p>
-			MAMOCHOU-COMPANY is dedicated to delivering top-quality dried fruits and nuts, including almonds, pistachios, walnuts, figs, apricots, and more. With years of experience in the import/export industry, we ensure freshness, quality, and timely delivery to our partners worldwide.
-		</p>
-		<ul style="font-size: 18px; color: #333; margin-top: 20px;">
-			<li>Wide variety of premium dried fruits and nuts</li>
-			<li>Strict quality control and food safety standards</li>
-			<li>Custom packaging and bulk orders available</li>
-			<li>Global shipping and logistics expertise</li>
-		</ul>
+	<div id="about" class="about-section">
+	  <div class="about-inner">
+	    <div class="about-text">
+	      <h2>About Us</h2>
+	      <p class="lead">MAMOCHOU-COMPANY connects trusted growers with global buyers, exporting premium dried fruits and nuts with a focus on quality, traceability, and sustainable practices.</p>
+	      <ul class="about-list">
+	        <li><strong>Quality first:</strong> We inspect and pack to meet export-grade standards and certifications.</li>
+	        <li><strong>Flexible supply:</strong> Bulk pallets, mixed cartons, or private-label packaging to suit buyers.</li>
+	        <li><strong>Transparent sourcing:</strong> Trackable shipments and clear product specifications.</li>
+	        <li><strong>Global logistics:</strong> Experience with export documentation, customs, and reliable shipping partners.</li>
+	      </ul>
+	      <a href="#contact" class="btn">Request a Quote</a>
+	    </div>
+	    <div class="about-image">
+	      <img src="https://images.unsplash.com/photo-1511732353404-7dffb0c9b2d6?auto=format&fit=crop&w=900&q=80" alt="Dried fruits and nuts mix" />
+	    </div>
+	  </div>
 	</div>
 
 
 	<div style="padding: 40px 20px; background: #fffbe7; border-radius: 15px; margin: 20px;">
 		<h2 style="color: #510c0c;">Mixed Dried Fruits & Nuts</h2>
-		<div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top: 30px;">
-			<div style="background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); width: 320px; padding: 20px; text-align: center;">
-				<img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=600&q=80" alt="Mixed Nuts" style="width: 100%; border-radius: 8px;">
-				<h3>Mixed Nuts</h3>
+		<div class="product-grid" style="margin-top:30px;">
+			<div class="product-card">
+				<img class="product-img" src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=900&q=80" alt="Mixed Nuts">
+				<div class="product-body">
+					<h3>Premium Mixed Nuts</h3>
+					<span class="badge">Roasted & Salted</span>
+				</div>
 			</div>
-			<div style="background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); width: 320px; padding: 20px; text-align: center;">
-				<img src="https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=600&q=80" alt="Mixed Dried Fruits" style="width: 100%; border-radius: 8px;">
-				<h3>Mixed Dried Fruits</h3>
+			<div class="product-card">
+				<img class="product-img" src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=900&q=80" alt="Mixed Dried Fruits">
+				<div class="product-body">
+					<h3>Mixed Dried Fruits</h3>
+					<span class="badge">Naturally Sweet</span>
+				</div>
 			</div>
-			<div style="background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); width: 320px; padding: 20px; text-align: center;">
-				<img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=600&q=80" alt="Dried Fruits & Nuts Mix" style="width: 100%; border-radius: 8px;">
-				<h3>Dried Fruits & Nuts Mix</h3>
+			<div class="product-card">
+				<img class="product-img" src="https://images.unsplash.com/photo-1507750818765-4d7b5e9a4b78?auto=format&fit=crop&w=900&q=80" alt="Dried Fruits & Nuts Mix">
+				<div class="product-body">
+					<h3>Fruit & Nut Mix</h3>
+					<span class="badge">Bulk / Retail</span>
+				</div>
 			</div>
 		</div>
 	</div>
