@@ -7,7 +7,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "pages#home"
-  get "about", to: "pages#about"
 
   get "contact", to: "pages#contact"
   # also accept /pages/contact to avoid routing errors from older links/tools
