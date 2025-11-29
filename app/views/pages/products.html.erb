@@ -1,52 +1,115 @@
-<div class="container">
-  <h1 style="color:#510c0c; text-align:center; margin-top: 24px;">Our Products</h1>
-  <p style="text-align:center; color:#555; max-width:900px; margin:8px auto 24px;">Explore our selection of premium mixed nuts and dried fruit products. Click a product to request a quote or for more details.</p>
+<div style="min-height: 100vh; background: #fafafa; padding: 60px 20px;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <style>
+      .back-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        padding: 12px 24px;
+        border-radius: 8px;
+        transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        font-size: 0.95em;
+        background: linear-gradient(135deg, #d84e4e, #c63434);
+        border: none;
+        box-shadow: 0 4px 12px rgba(216, 78, 78, 0.25);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
 
-  <div class="product-grid">
-    <div class="product-card">
-      <img class="product-img" src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=900&q=80" alt="Premium Mixed Nuts - Almonds, Cashews, Pistachios">
-      <div class="product-body">
-        <h3>Premium Mixed Nuts</h3>
-        <p style="color:#666; font-size:0.95rem; margin-top:8px;">Almonds, cashews, pistachios — roasted and lightly salted. Available in bulk and retail packaging.</p>
-        <div style="margin-top:10px;"><a class="btn" href="/contact">Request Quote</a></div>
-      </div>
+      .back-button:hover {
+        background: linear-gradient(135deg, #c63434, #b82d2d);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(216, 78, 78, 0.4);
+      }
+
+      .back-button:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 8px rgba(216, 78, 78, 0.3);
+      }
+
+      .back-button span:first-child {
+        font-size: 1.3em;
+        display: flex;
+        align-items: center;
+        transition: transform 300ms ease;
+      }
+
+      .back-button:hover span:first-child {
+        transform: translateX(-3px);
+      }
+    </style>
+
+    <a href="/" class="back-button" style="margin-bottom: 40px;">
+      <span>←</span>
+      <span>Back to Home</span>
+    </a>
+
+    <div style="text-align: center; margin-bottom: 50px;">
+      <h1 style="color: #2c3e50; font-size: 2.5em; margin: 0 0 16px 0; font-weight: 700;">Our Premium Products</h1>
+      <p style="color: #666; font-size: 1.1em; max-width: 700px; margin: 0 auto; line-height: 1.6;">Discover our carefully selected range of premium mixed nuts and dried fruits. Each product is sourced, inspected, and packaged to meet the highest export standards.</p>
     </div>
 
-    <div class="product-card">
-      <img class="product-img" src="https://images.unsplash.com/photo-1599599810824-8e0efced9d3d?auto=format&fit=crop&w=900&q=80" alt="Mixed Dried Fruits - Apricots, Figs, Dates, Raisins">
-      <div class="product-body">
-        <h3>Mixed Dried Fruits</h3>
-        <p style="color:#666; font-size:0.95rem; margin-top:8px;">Apricots, figs, dates and raisins — naturally sun-dried and hand-sorted for quality.</p>
-        <div style="margin-top:10px;"><a class="btn" href="/contact">Request Quote</a></div>
+    <div class="product-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+      <div class="product-card" style="background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 12px rgba(216, 78, 78, 0.08); transition: all 300ms ease;">
+        <img class="product-img" src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=900&q=80" alt="Premium Mixed Nuts - Almonds, Cashews, Pistachios" style="width: 100%; height: 240px; object-fit: cover; display: block;">
+        <div class="product-body" style="padding: 24px;">
+          <h3 style="color: #2c3e50; margin: 0 0 8px 0; font-size: 1.3em; font-weight: 600;">Premium Mixed Nuts</h3>
+          <p style="color: #888; font-size: 0.9em; margin: 0 0 12px 0; text-transform: uppercase; letter-spacing: 0.5px;">Roasted & Salted</p>
+          <p style="color: #666; font-size: 0.95rem; margin: 0 0 16px 0; line-height: 1.6;">Almonds, cashews, pistachios — roasted and lightly salted. Available in bulk and retail packaging.</p>
+          <a class="btn" href="/contact" style="display: inline-block; background: #d84e4e; color: #fff; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 200ms ease; font-size: 0.95em;">Request Quote</a>
+        </div>
       </div>
+
+      <div class="product-card" style="background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 12px rgba(216, 78, 78, 0.08); transition: all 300ms ease;">
+        <img class="product-img" src="https://images.unsplash.com/photo-1599599810824-8e0efced9d3d?auto=format&fit=crop&w=900&q=80" alt="Mixed Dried Fruits - Apricots, Figs, Dates, Raisins" style="width: 100%; height: 240px; object-fit: cover; display: block;">
+        <div class="product-body" style="padding: 24px;">
+          <h3 style="color: #2c3e50; margin: 0 0 8px 0; font-size: 1.3em; font-weight: 600;">Mixed Dried Fruits</h3>
+          <p style="color: #888; font-size: 0.9em; margin: 0 0 12px 0; text-transform: uppercase; letter-spacing: 0.5px;">Naturally Sweet</p>
+          <p style="color: #666; font-size: 0.95rem; margin: 0 0 16px 0; line-height: 1.6;">Apricots, figs, dates and raisins — naturally sun-dried and hand-sorted for quality.</p>
+          <a class="btn" href="/contact" style="display: inline-block; background: #d84e4e; color: #fff; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 200ms ease; font-size: 0.95em;">Request Quote</a>
+        </div>
+      </div>
+
+      <div class="product-card" style="background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 12px rgba(216, 78, 78, 0.08); transition: all 300ms ease;">
+        <img class="product-img" src="https://images.unsplash.com/photo-1599599810694-b5ac4dd33cdc?auto=format&fit=crop&w=900&q=80" alt="Fruit & Nut Mix - Balanced Combination" style="width: 100%; height: 240px; object-fit: cover; display: block;">
+        <div class="product-body" style="padding: 24px;">
+          <h3 style="color: #2c3e50; margin: 0 0 8px 0; font-size: 1.3em; font-weight: 600;">Fruit & Nut Mix</h3>
+          <p style="color: #888; font-size: 0.9em; margin: 0 0 12px 0; text-transform: uppercase; letter-spacing: 0.5px;">Balanced Blend</p>
+          <p style="color: #666; font-size: 0.95rem; margin: 0 0 16px 0; line-height: 1.6;">Balanced servings ideal for retail packs or promotional mixes — custom blends available.</p>
+          <a class="btn" href="/contact" style="display: inline-block; background: #d84e4e; color: #fff; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 200ms ease; font-size: 0.95em;">Request Quote</a>
+        </div>
+      </div>
+
+      <div class="product-card" style="background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 12px rgba(216, 78, 78, 0.08); transition: all 300ms ease;">
+        <img class="product-img" src="https://images.unsplash.com/photo-1599599811035-ba4e93e201b1?auto=format&fit=crop&w=900&q=80" alt="Roasted Nut Packs - Single Serve and Family Sizes" style="width: 100%; height: 240px; object-fit: cover; display: block;">
+        <div class="product-body" style="padding: 24px;">
+          <h3 style="color: #2c3e50; margin: 0 0 8px 0; font-size: 1.3em; font-weight: 600;">Roasted Nut Packs</h3>
+          <p style="color: #888; font-size: 0.9em; margin: 0 0 12px 0; text-transform: uppercase; letter-spacing: 0.5px;">Convenient Packs</p>
+          <p style="color: #666; font-size: 0.95rem; margin: 0 0 16px 0; line-height: 1.6;">Single-serve or family packs — perfect for retail shelves and export orders.</p>
+          <a class="btn" href="/contact" style="display: inline-block; background: #d84e4e; color: #fff; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 200ms ease; font-size: 0.95em;">Request Quote</a>
+        </div>
+      </div>
+
+      <div class="product-card" style="background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 12px rgba(216, 78, 78, 0.08); transition: all 300ms ease;">
+        <img class="product-img" src="https://images.unsplash.com/photo-1585518419759-d530e0e4e5f1?auto=format&fit=crop&w=900&q=80" alt="Organic Mix - Certified Organic Nuts and Fruits" style="width: 100%; height: 240px; object-fit: cover; display: block;">
+        <div class="product-body" style="padding: 24px;">
+          <h3 style="color: #2c3e50; margin: 0 0 8px 0; font-size: 1.3em; font-weight: 600;">Organic Mix</h3>
+          <p style="color: #888; font-size: 0.9em; margin: 0 0 12px 0; text-transform: uppercase; letter-spacing: 0.5px;">Certified Organic</p>
+          <p style="color: #666; font-size: 0.95rem; margin: 0 0 16px 0; line-height: 1.6;">Certified organic nuts and fruits — traceable and sustainably sourced.</p>
+          <a class="btn" href="/contact" style="display: inline-block; background: #d84e4e; color: #fff; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 200ms ease; font-size: 0.95em;">Request Quote</a>
+        </div>
+      </div>
+
     </div>
 
-    <div class="product-card">
-      <img class="product-img" src="https://images.unsplash.com/photo-1599599810694-b5ac4dd33cdc?auto=format&fit=crop&w=900&q=80" alt="Fruit & Nut Mix - Balanced Combination">
-      <div class="product-body">
-        <h3>Fruit & Nut Mix</h3>
-        <p style="color:#666; font-size:0.95rem; margin-top:8px;">Balanced servings ideal for retail packs or promotional mixes — custom blends available.</p>
-        <div style="margin-top:10px;"><a class="btn" href="/contact">Request Quote</a></div>
-      </div>
+    <div style="margin-top: 60px; padding: 40px; background: #fff; border-radius: 10px; box-shadow: 0 2px 12px rgba(216, 78, 78, 0.08); text-align: center;">
+      <h2 style="color: #2c3e50; margin: 0 0 16px 0; font-size: 1.6em; font-weight: 600;">Custom Orders Available</h2>
+      <p style="color: #666; margin: 0 0 20px 0; font-size: 1.05em; line-height: 1.6;">Need a specific blend or custom packaging? Our team can work with you to create the perfect product for your market.</p>
+      <a href="/contact" style="display: inline-block; background: #d84e4e; color: #fff; padding: 14px 32px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 200ms ease; font-size: 1em;">Contact Us Today</a>
     </div>
-
-    <div class="product-card">
-      <img class="product-img" src="https://images.unsplash.com/photo-1599599811035-ba4e93e201b1?auto=format&fit=crop&w=900&q=80" alt="Roasted Nut Packs - Single Serve and Family Sizes">
-      <div class="product-body">
-        <h3>Roasted Nut Packs</h3>
-        <p style="color:#666; font-size:0.95rem; margin-top:8px;">Convenient single-serve or family packs — perfect for retail shelves and export orders.</p>
-        <div style="margin-top:10px;"><a class="btn" href="/contact">Request Quote</a></div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <img class="product-img" src="https://images.unsplash.com/photo-1585518419759-d530e0e4e5f1?auto=format&fit=crop&w=900&q=80" alt="Organic Mix - Certified Organic Nuts and Fruits">
-      <div class="product-body">
-        <h3>Organic Mix</h3>
-        <p style="color:#666; font-size:0.95rem; margin-top:8px;">Certified organic nuts and fruits — traceable and sustainably sourced.</p>
-        <div style="margin-top:10px;"><a class="btn" href="/contact">Request Quote</a></div>
-      </div>
-    </div>
-
   </div>
 </div>

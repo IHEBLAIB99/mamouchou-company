@@ -1,4 +1,98 @@
 
+
+
+<style>
+	.back-button {
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+		color: #fff;
+		text-decoration: none;
+		font-weight: 700;
+		padding: 12px 24px;
+		border-radius: 8px;
+		transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+		font-size: 0.95em;
+		background: linear-gradient(135deg, #d84e4e, #c63434);
+		border: none;
+		box-shadow: 0 4px 12px rgba(216, 78, 78, 0.25);
+		cursor: pointer;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.back-button:hover {
+		background: linear-gradient(135deg, #c63434, #b82d2d);
+		transform: translateY(-2px);
+		box-shadow: 0 8px 20px rgba(216, 78, 78, 0.4);
+	}
+
+	.back-button:active {
+		transform: translateY(0);
+		box-shadow: 0 2px 8px rgba(216, 78, 78, 0.3);
+	}
+
+	.back-button span:first-child {
+		font-size: 1.3em;
+		display: flex;
+		align-items: center;
+		transition: transform 300ms ease;
+	}
+
+	.back-button:hover span:first-child {
+		transform: translateX(-3px);
+	}
+
+	/* Enhanced Form Input Styling */
+	.contact-form input[type="text"],
+	.contact-form input[type="email"],
+	.contact-form input[type="tel"],
+	.contact-form textarea {
+		border: 2px solid #e0e0e0 !important;
+		background-color: #fafafa !important;
+		padding: 14px 16px !important;
+		border-radius: 8px !important;
+		transition: all 300ms ease !important;
+		font-size: 0.95em !important;
+	}
+
+	.contact-form input[type="text"]:focus,
+	.contact-form input[type="email"]:focus,
+	.contact-form input[type="tel"]:focus,
+	.contact-form textarea:focus {
+		border-color: #d84e4e !important;
+		background-color: #fff !important;
+		box-shadow: 0 0 0 4px rgba(216, 78, 78, 0.15) !important;
+		outline: none !important;
+	}
+
+	.contact-form input[type="text"]:hover,
+	.contact-form input[type="email"]:hover,
+	.contact-form input[type="tel"]:hover,
+	.contact-form textarea:hover {
+		border-color: #d84e4e !important;
+		background-color: #f5f5f5 !important;
+	}
+
+	/* Labels styling */
+	.contact-form label {
+		color: #d84e4e !important;
+		font-weight: 700 !important;
+		font-size: 0.94em !important;
+		margin-bottom: 9px !important;
+		text-transform: uppercase !important;
+		letter-spacing: 0.8px !important;
+		display: block !important;
+		padding: 2px 0 !important;
+		transition: color 200ms ease !important;
+	}
+</style><div style="max-width: 600px; margin: 0 auto 40px;">
+	<a href="/" class="back-button">
+		<span>←</span>
+		<span>Back to Home</span>
+	</a>
+</div>
+
 <div class="contact-form-card">
 	<h1>Contact Us</h1>
 	<p style="text-align:center; color:#555; margin-bottom:20px;">Have a question or need a quote? Fill the form below and we'll get back to you within 1 business day.</p>
