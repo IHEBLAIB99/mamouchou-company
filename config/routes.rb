@@ -17,6 +17,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       # GET /api/v1/production_images
       get "production_images", to: "images#index"
+      # POST /api/v1/contact
+      post "contact", to: "contacts#create"
     end
   end
   # root "posts#index"
